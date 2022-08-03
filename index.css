@@ -1,6 +1,4 @@
-#wrapper {
-    width: 300px;
-    height: 90px;
-
-    overflow-x: auto;
+pre {
+    display: inline-block;
+    /* float: left; */
 }
