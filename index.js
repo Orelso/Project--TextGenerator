@@ -2,6 +2,8 @@ do{
 var name = prompt("Enter Your Name/Text").trim().toUpperCase()
 } while(name !== null && name === "")
 
+print = "Click on any button to change the text to that"
+
 const letters = {
   'A': "..######..<br>..#....#..<br>..######..<br>..#....#..<br>..#....#..<br><br>",
   'B': "..######..<br>..#....#..<br>..#####...<br>..#....#..<br>..######..<br><br>",
@@ -37,3 +39,33 @@ if (name.length > 0) {
   text = name.split("").map(i => letters[i] || "Sorry I cant do those characters only letters<br/>"); // return the character or X if not found
   document.getElementById("content").innerHTML = `<pre>${text.join("</pre><pre>")}</pre>`;
 }
+
+
+
+const btn = document.getElementById('btn');
+
+btn.addEventListener('click', function onClick(event) {
+  // 👇️ Change text color globally
+  document.body.style.color = 'darkgreen';
+});
+
+const btn1 = document.getElementById('btn1');
+
+btn1.addEventListener('click', function onClick(event) {
+  // 👇️ Change text color globally
+  document.body.style.color = 'darkred';
+});
+
+const btn2 = document.getElementById('btn2');
+
+btn2.addEventListener('click', function onClick(event) {
+  // 👇️ Change text color globally
+  document.body.style.color = 'darkslateblue';
+});
+
+const btn3 = document.getElementById('btn3');
+
+btn3.addEventListener('click', function onClick(event) {
+  // 👇️ Change text color globally
+  document.body.style.color = 'fuchsia';
+});

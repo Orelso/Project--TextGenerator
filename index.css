@@ -1,4 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #BEBEBE;
+}
+
 pre {
     display: inline-block;
     /* float: left; */
+}
+
+h1 {
+    background: -webkit-linear-gradient(315deg, rgb(144, 129, 84) 0%, #E3CD81FF 74%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-family: 'Cormorant SC', serif;
+    font-size: 55px;
+}
+
+#content {
+    overflow: auto;
+    /* width: 500px;
+    height: 500px; */
+    width: 80vw;    
+    height: 40vw;
+    position: relative;
+}
+
+.align {
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    width: 80vw; 
+    height: 40vw;
+    margin: 50px auto;
+    border-style: ridge;
+    border-color: #E3CD81FF;
+    border-width: 20px;
+    
+}
+
+
+button {
+    border: 0 solid #E5E7EB;
+    box-sizing: border-box;
+    margin-top: 1%;
+    color: #000000;
+    display: inline-block;
+    font-family: "Pacifico";
+    font-size: 1rem;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 1.75rem;
+    padding: .75rem 1.65rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none #000000 solid;
+    text-decoration-thickness: auto;
+    width: 100%;
+    width: 210px;
+    position: relative;
+    cursor: pointer;
+    transform: rotate(-2deg);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+button:focus {
+    outline: 0;
+}
+
+button:after {
+    content: '';
+    position: absolute;
+    border: 1px solid #000000;
+    bottom: 4px;
+    left: 4px;
+    width: calc(100% - 1px);
+    height: calc(100% - 1px);
+}
+
+button:hover:after {
+    bottom: 2px;
+    left: 2px;
+}
+
+@media (min-width: 768px) {
+  button {
+    padding: .75rem 3rem;
+    font-size: 1.25rem;
+  }
+}
+
+#btn {
+    background-color: darkgreen;
+}
+#btn1{
+    background-color: darkred;
+
+}
+#btn2 {
+    background-color: darkslateblue;
+
+}
+#btn3 {
+    background-color: fuchsia;
 }
